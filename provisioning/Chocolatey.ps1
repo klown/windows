@@ -33,4 +33,10 @@ refreshenv
 Invoke-Command $chocolatey "install msbuild.extensionpack -y"
 refreshenv
 
+Invoke-Command $chocolatey "install nuget.commandLine -y"
+refreshenv
+
+Invoke-Command Install-Package "NUnit -MinimumVersion 3.8.1"
+refreshenv
+
 exit 0
