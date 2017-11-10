@@ -38,6 +38,8 @@ refreshenv
 
 #Invoke-Command Install-Package "NUnit -MinimumVersion 3.8.1"
 Invoke-Command $chocolatey "install NUnit -y"
+$nunitConsolePath = "C:\Program Files (x86)\NUnit.org\nunit-console\"
+Add-Path $nunitConsolePath $true
 refreshenv
 
 exit 0
